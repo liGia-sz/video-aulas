@@ -109,7 +109,38 @@
               position: relative;
               border-radius: 6px;
             }
-            
+            /* Imagens ocultas inicialmente */
+.hover-images {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaço entre imagens */
+  bottom: -80px; /* Ajuste a posição abaixo do círculo */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+
+.hover-images img {
+  width: 60px; /* Tamanho das imagens */
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(214, 64, 64);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+/* Mostra as imagens ao passar o cursor no círculo */
+.container:hover .hover-images {
+  opacity: 1; /* Torna visível */
+  bottom: -100px; /* Move as imagens suavemente para baixo */
+}
+
+.container:hover .hover-images img {
+  transform: scale(1); /* Aumenta as imagens suavemente */
+}
             /* Media queries - Responsive timeline on screens less than 600px wide */
             @media screen and (max-width: 600px) {
               /* Place the timelime to the left */
@@ -185,22 +216,38 @@
                       <h2>Setembro de 2025</h2>
                       <h3>Apresentação do TCC</h3>
                       <p>O sistema será oficialmente apresentado como Trabalho de Conclusão do Curso Técnico em Informática para Internet. Esse evento marca o encerramento de uma jornada de pesquisa, desenvolvimento e inovação.</p>
+                        <!-- Imagens ocultas inicialmente -->
+                        <div class="hover-images">
+                            <img src="img/Card.Inicio.2.png" alt="Membro 1">
+                            <img src="img/Card.Inicio.2.png" alt="Membro 2">
+                        </div>
                     </div>
                   </div>
+                    
                   <!-- 2° Card -->
                   <div class="container right">
                     <div class="content">
                       <h2>Dezembro de 2024</h2>
                       <h3>Preparação para o TCC</h3>
                       <p>Nesta etapa, focamos no refinamento final do sistema, preparando a apresentação e documentando o projeto. O site LYS Tec foi desenvolvido como parte integrante da apresentação, servindo como um guia completo para o público e avaliadores.</p>
+                      <!-- Imagens ocultas inicialmente -->
+                      <div class="hover-images">
+                        <img src="img/Card.Inicio.2.png" alt="Membro 1">
+                        <img src="img/Card.Inicio.2.png" alt="Membro 2">
                     </div>
-                  </div>
+                </div>
+              </div>
                   <!-- 3° Card -->
                   <div class="container left">
                     <div class="content">
                       <h2>Outubro de 2024</h2>
                       <h3>Prototipagem em html</h3>
                       <p>A equipe, composta por Ligia, Ykaro e Sofia (L.Y.S), uniu conhecimentos em desenvolvimento web, design e soluções integradas. Começamos a estruturar a ideia, definindo requisitos do sistema e criando as primeiras versões dos componentes principais.</p>
+                        <!-- Imagens ocultas inicialmente -->
+                        <div class="hover-images">
+                            <img src="img/Card.Inicio.2.png" alt="Membro 1">
+                            <img src="img/Card.Inicio.2.png" alt="Membro 2">
+                        </div>
                     </div>
                   </div>
                   <!-- 4° Card -->
@@ -209,6 +256,11 @@
                       <h2>Setembro de 2024</h2>
                       <h3>Desenvolvimento do Sistema</h3>
                       <p>Identificamos uma necessidade real: reduzir conflitos em cinemas relacionados à ocupação de poltronas e atrasos, ao mesmo tempo que proporcionamos uma experiência organizada e inovadora aos clientes e funcionários através de nosso sistema e aplicativo.</p>
+                     <!-- Imagens ocultas inicialmente -->
+                     <div class="hover-images">
+                        <img src="img/Card.Inicio.2.png" alt="Membro 1">
+                        <img src="img/Card.Inicio.2.png" alt="Membro 2">
+                    </div>
                     </div>
                   </div>
                   <!-- 5° Card -->
@@ -217,6 +269,11 @@
                       <h2>Agosto de 2024</h2>
                       <h3>Competição Inova Senai</h3>
                       <p>Após o sucesso regional, apresentamos o projeto na etapa nacional do <strong>Inova Senai</strong>, recebendo feedbacks e validações importantes.</p>
+                        <!-- Imagens ocultas inicialmente -->
+                        <div class="hover-images">
+                            <img src="img/Card.Inicio.2.png" alt="Membro 1">
+                            <img src="img/Card.Inicio.2.png" alt="Membro 2">
+                        </div>
                     </div>
                   </div>
                   <!-- 6° Card -->
@@ -226,10 +283,16 @@
                       <h3>O Início da ideia</h3>
                       <p>O projeto nasceu como uma solução inovadora durante a competição <strong>DSPI (Desafio de Projetos Integradores)</strong>, e foi levado à fase nacional no Inova SENAI. O desafio proposto envolvia encontrar maneiras criativas de resolver conflitos sobre a ocupação indevida de assentos em salas cinemas.</p>
                     </div>
-                  </div>
+                    <!-- Imagens ocultas inicialmente -->
+                    <div class="hover-images">
+                        <img src="img/Card.Inicio.2.png" alt="Membro 1">
+                        <img src="img/Card.Inicio.2.png" alt="Membro 2">
+                    </div>
                 </div>
-                
-     
+                </div>  
+                </div>
+            </div>
+
         </main>
         <footer>
 
