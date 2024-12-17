@@ -109,48 +109,46 @@
               position: relative;
               border-radius: 6px;
             }
-            /* Imagens ocultas inicialmente */
-/* Configuração base para as imagens */
-.hover-images {
-  position: absolute;
-  display: flex;
-  gap: 20px; /* Espaço entre as imagens */
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0; /* Invisível por padrão */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
+            /* IMAGENS OCULTAS INICIALMENTE */
+                /* Configuração base para as imagens */
+                .hover-images {
+                position: absolute;
+                display: flex;
+                gap: 40px; /* Espaço entre as imagens */
+                top: 50%;
+                transform: translateY(-50%);
+                opacity: 0; /* Invisível por padrão */
+                transition: opacity 0.5s ease, transform 0.5s ease;
+                }
 
-.hover-images img {
-  width: 80px; /* Tamanho inicial */
-  height: 80px;
-  border-radius: 50%;
-  border: 3px solid rgb(214, 64, 64);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease; /* Animação de zoom */
-}
+                .hover-images img {
+                width: 50%; /* Tamanho inicial */
+                height: 180px;
+                border-radius: 50%;
+                border: 3px solid rgb(214, 64, 64);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s ease; /* Animação de zoom */
+                }
 
-/* Quando o mouse estiver sobre o container */
-.container:hover .hover-images {
-  opacity: 1; /* Torna visível */
-  transform: translateY(-50%) scale(1.1); /* Leve zoom */
-}
+                /* Quando o mouse estiver sobre o container */
+                .container:hover .hover-images {
+                opacity: 1; /* Torna visível */
+                transform: translateY(-50%) scale(1.1); /* Leve zoom */
+                }
 
-.container:hover .hover-images img {
-  transform: scale(1.2); /* Aumenta as imagens */
-}
+                .container:hover .hover-images img {
+                transform: scale(1.2); /* Aumenta as imagens */
+                }
 
-/* POSICIONAMENTO DAS IMAGENS DEPENDENDO DO LADO DA LINHA */
-
-/* Imagens para os containers à esquerda */
-.container.left .hover-images {
-  right: -300px; /* Posiciona as imagens à direita */
-}
-
-/* Imagens para os containers à direita */
-.container.right .hover-images {
-  left: -300px; /* Posiciona as imagens à esquerda */
-}
+                /* POSICIONAMENTO DAS IMAGENS DEPENDENDO DO LADO DA LINHA */
+                /* Imagens para os containers à esquerda */
+                .container.left .hover-images {
+                right: -500px; 
+                }
+                /* Imagens para os containers à direita */
+                .container.right .hover-images {
+                left: -500px; 
+                }
 
             /* Media queries - Responsive timeline on screens less than 600px wide */
             @media screen and (max-width: 600px) {
@@ -192,7 +190,7 @@
             <nav class="navbar navbar-expand-lg bg-navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/Logo NAVBAR.png" alt="Logo" width="150" height="70">
+                        <img src="img/Logo NAVBAR.png" alt="Logo" width="150" height="75">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
