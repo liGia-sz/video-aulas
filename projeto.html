@@ -13,6 +13,136 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Projeto | Vídeo Aula</title>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            /* LINHA VERTICAL */
+            .timeline {
+              position: relative;
+              max-width: 1200px;
+              margin: 0 auto;
+            }
+            
+            /* POSIÇÃO E COR DA LINHA VERTICAL */
+            .timeline::after {
+              content: '';
+              position: absolute;
+              width: 6px;
+              background-color: rgb(136, 16, 16);
+              top: 0;
+              bottom: 0;
+              left: 50%;
+              margin-left: -3px;
+            }
+            
+            /* Container em volta da timeline */
+            .container {
+              padding: 10px 40px;
+              position: relative;
+              background-color: inherit;
+              width: 50%;
+            }
+            
+            /* Círculos da timeline */
+            .container::after {
+              content: '';
+              position: absolute;
+              width: 25px;
+              height: 25px;
+              right: -17px;
+              background-color: rgb(214, 64, 64);
+              border: 4px solid #d43636;
+              top: 15px;
+              border-radius: 50%;
+              z-index: 1;
+            }
+            
+            /* Place the container to the left */
+            .left {
+              left: -25.5%;
+            }
+            
+            /* Itens da Direita */
+            .right {
+              left: 25.3%;
+            }
+            
+            /* Add arrows to the left container (pointing right) */
+            .left::before {
+              content: " ";
+              height: 0;
+              position: absolute;
+              top: 22px;
+              width: 0;
+              z-index: 1;
+              right: 30px;
+              border: medium solid white;
+              border-width: 10px 0 10px 10px;
+              border-color: transparent transparent transparent white;
+            }
+            
+            /* Add arrows to the right container (pointing left) */
+            .right::before {
+              content: " ";
+              height: 0;
+              position: absolute;
+              top: 22px;
+              width: 0;
+              z-index: 1;
+              left: 30px;
+              border: medium solid white;
+              border-width: 10px 10px 10px 0;
+              border-color: transparent white transparent transparent;
+            }
+            
+            /* Fix the circle for containers on the right side */
+            .right::after {
+              left: -16px;
+            }
+            
+            /* The actual content */
+            .content {
+              padding: 20px 30px;
+              background-color: white;
+              position: relative;
+              border-radius: 6px;
+            }
+            
+            /* Media queries - Responsive timeline on screens less than 600px wide */
+            @media screen and (max-width: 600px) {
+              /* Place the timelime to the left */
+              .timeline::after {
+              left: 31px;
+              }
+              
+              /* Full-width containers */
+              .container {
+              width: 100%;
+              padding-left: 70px;
+              padding-right: 25px;
+              }
+              
+              /* Make sure that all arrows are pointing leftwards */
+              .container::before {
+              left: 60px;
+              border: medium solid white;
+              border-width: 10px 10px 10px 0;
+              border-color: transparent white transparent transparent;
+              }
+            
+              /* Make sure all circles are at the same spot */
+              .left::after, .right::after {
+              left: 15px;
+              }
+              
+              /* Make all right containers behave like the left ones */
+              .right {
+              left: 0%;
+              }
+            }
+            </style>
     </head>
     <body>
         <header>
@@ -45,9 +175,61 @@
             
         </header>
         <main>
-            <h1>Projeto LYS: Origem, Equipe e Inspiração</h1>
-
-            
+            <h1 style="text-align: center;">A Jornada do Projeto LYS</h1>
+            <h2 style="text-align: center;">Preparamos uma Linha do Tempo do projeto LYS. de suas origens á sua conclusão:</h2>
+                <!-- LINHA DO TEMPO -->
+                <div class="timeline">
+                  <!-- 1° Card -->
+                  <div class="container left">
+                    <div class="content">
+                      <h2>Setembro de 2025</h2>
+                      <h3>Apresentação do TCC</h3>
+                      <p>O sistema será oficialmente apresentado como Trabalho de Conclusão do Curso Técnico em Informática para Internet. Esse evento marca o encerramento de uma jornada de pesquisa, desenvolvimento e inovação.</p>
+                    </div>
+                  </div>
+                  <!-- 2° Card -->
+                  <div class="container right">
+                    <div class="content">
+                      <h2>Dezembro de 2024</h2>
+                      <h3>Preparação para o TCC</h3>
+                      <p>Nesta etapa, focamos no refinamento final do sistema, preparando a apresentação e documentando o projeto. O site LYS Tec foi desenvolvido como parte integrante da apresentação, servindo como um guia completo para o público e avaliadores.</p>
+                    </div>
+                  </div>
+                  <!-- 3° Card -->
+                  <div class="container left">
+                    <div class="content">
+                      <h2>Outubro de 2024</h2>
+                      <h3>Prototipagem em html</h3>
+                      <p>A equipe, composta por Ligia, Ykaro e Sofia (L.Y.S), uniu conhecimentos em desenvolvimento web, design e soluções integradas. Começamos a estruturar a ideia, definindo requisitos do sistema e criando as primeiras versões dos componentes principais.</p>
+                    </div>
+                  </div>
+                  <!-- 4° Card -->
+                  <div class="container right">
+                    <div class="content">
+                      <h2>Setembro de 2024</h2>
+                      <h3>Desenvolvimento do Sistema</h3>
+                      <p>Identificamos uma necessidade real: reduzir conflitos em cinemas relacionados à ocupação de poltronas e atrasos, ao mesmo tempo que proporcionamos uma experiência organizada e inovadora aos clientes e funcionários através de nosso sistema e aplicativo.</p>
+                    </div>
+                  </div>
+                  <!-- 5° Card -->
+                  <div class="container left">
+                    <div class="content">
+                      <h2>Agosto de 2024</h2>
+                      <h3>Competição Inova Senai</h3>
+                      <p>Após o sucesso regional, apresentamos o projeto na etapa nacional do <strong>Inova Senai</strong>, recebendo feedbacks e validações importantes.</p>
+                    </div>
+                  </div>
+                  <!-- 6° Card -->
+                  <div class="container right">
+                    <div class="content">
+                      <h2>Junho de 2024</h2>
+                      <h3>O Início da ideia</h3>
+                      <p>O projeto nasceu como uma solução inovadora durante a competição <strong>DSPI (Desafio de Projetos Integradores)</strong>, e foi levado à fase nacional no Inova SENAI. O desafio proposto envolvia encontrar maneiras criativas de resolver conflitos sobre a ocupação indevida de assentos em salas cinemas.</p>
+                    </div>
+                  </div>
+                </div>
+                
+     
         </main>
         <footer>
 
