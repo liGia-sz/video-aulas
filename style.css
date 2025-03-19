@@ -5,7 +5,7 @@
     font-family: 'Kanit', sans-serif;
     font-size: larger;
     background-color: #a75c5c00;
-    padding: 10px 20px;
+    padding: 8px 10px;
   }
 
   .navbar a {
@@ -87,32 +87,6 @@ body {
     background-color: #f8d9d9; /* Altera a cor do botão */
     color: rgb(148, 38, 38); /* Cor do texto do botão ao passar o mouse */
 }
-
-/* Centralizar conteúdo dos cards grandes */
-.card-large .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Alinha texto no centro */
-    /* Garante que o flex ocupe todo o espaço */
-}
-
-/* Centralizar conteúdo dos cards menores */
-.card-small .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%; /* Mesma lógica para ocupar espaço */
-}
-
-/* Ajuste de margens entre o título e o texto */
-.card-title {
-    margin-bottom: 5%;
-}
-
 
 /* Cartões responsivos */
 .card {
