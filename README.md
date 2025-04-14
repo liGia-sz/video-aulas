@@ -1,6 +1,8 @@
 # video-aulas
 Repositório destinado para fins didáticos.
 # 🎬 Projeto LYS - Sistema para Poltronas Inteligentes de Cinema
+![image](https://github.com/user-attachments/assets/a153be60-b08c-4ed1-9a61-54ea1d544b2f)
+
 ## 🎞️ Proposta do site
 Este projeto foi desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) em Técnico de Informática para Internet. O site tem como objetivo apresentar o sistema de poltronas inteligentes para cinemas, que utiliza QR codes e LEDs para melhorar a experiência do usuário e otimizar a gestão de sessões.
 
