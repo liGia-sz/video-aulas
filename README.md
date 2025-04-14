@@ -19,18 +19,18 @@ A plataforma fornece uma interface simples e interativa para o controle das luze
 
 ## 🎞️ Etapas implementadas
 ```
- 1. Adicionar link do Bootstrap: Incluído o link do Bootstrap para facilitar o uso de componentes.
- 2. Estrutura básica do HTML: Criada a estrutura de abas e linha do tempo.
- 3. Estilização com CSS: Implementação do design responsivo e animações.
- 4. Adição de imagens de hover na linha do tempo: Imagens ocultas até o hover no ponto da linha do tempo.
- 5. Integração de uma linha do tempo dinâmica: Organização dos pontos e conteúdo interativo.
- 6. Testes de responsividade: Garantido que o site se ajusta corretamente em telas de diferentes tamanhos.
+1. Adicionar link do Bootstrap: Incluído o link do Bootstrap para facilitar o uso de componentes.
+2. Estrutura básica do HTML: Criada a estrutura de abas e linha do tempo.
+3. Estilização com CSS: Implementação do design responsivo e animações.
+4. Adição de imagens de hover na linha do tempo: Imagens ocultas até o hover no ponto da linha do tempo.
+5. Integração de uma linha do tempo dinâmica: Organização dos pontos e conteúdo interativo.
+6. Testes de responsividade: Garantido que o site se ajusta corretamente em telas de diferentes tamanhos.
 ```
 
 ## 🎞️ Backlog
- [] Ajustes finais de conteúdo: Completar os detalhes sobre os membros da equipe e o TCC.
- [] Adicionar conteúdo interativo sobre o sistema: Incluir mais detalhes sobre o funcionamento técnico do sistema.
- [] Otimização para SEO: Melhorar a estrutura de SEO do site para facilitar o ranqueamento nos motores de busca.
- [] Refinar animações de transição: Aperfeiçoar o tempo e os efeitos de transições para um visual mais fluido.
- [] Testar compatibilidade entre navegadores: Garantir que o site funcione bem em diferentes navegadores e dispositivos.
- [] Implementação de funcionalidades de backend: Se necessário, adicionar funcionalidades de backend para gerenciar os dados do sistema.
+ [ ] Ajustes finais de conteúdo: Completar os detalhes sobre os membros da equipe e o TCC.
+ [ ] Adicionar conteúdo interativo sobre o sistema: Incluir mais detalhes sobre o funcionamento técnico do sistema.
+ [ ] Otimização para SEO: Melhorar a estrutura de SEO do site para facilitar o ranqueamento nos motores de busca.
+ [ ] Refinar animações de transição: Aperfeiçoar o tempo e os efeitos de transições para um visual mais fluido.
+ [ ] Testar compatibilidade entre navegadores: Garantir que o site funcione bem em diferentes navegadores e dispositivos.
+ [ ] Implementação de funcionalidades de backend: Se necessário, adicionar funcionalidades de backend para gerenciar os dados do sistema.
