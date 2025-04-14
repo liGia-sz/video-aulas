@@ -28,9 +28,9 @@ A plataforma fornece uma interface simples e interativa para o controle das luze
 ```
 
 ## 🎞️ Backlog
- [ ] Ajustes finais de conteúdo: Completar os detalhes sobre os membros da equipe e o TCC.
- [ ] Adicionar conteúdo interativo sobre o sistema: Incluir mais detalhes sobre o funcionamento técnico do sistema.
- [ ] Otimização para SEO: Melhorar a estrutura de SEO do site para facilitar o ranqueamento nos motores de busca.
- [ ] Refinar animações de transição: Aperfeiçoar o tempo e os efeitos de transições para um visual mais fluido.
- [ ] Testar compatibilidade entre navegadores: Garantir que o site funcione bem em diferentes navegadores e dispositivos.
- [ ] Implementação de funcionalidades de backend: Se necessário, adicionar funcionalidades de backend para gerenciar os dados do sistema.
+ - [ ] Ajustes finais de conteúdo: Completar os detalhes sobre os membros da equipe e o TCC.
+ - [ ] Adicionar conteúdo interativo sobre o sistema: Incluir mais detalhes sobre o funcionamento técnico do sistema.
+ - [ ] Otimização para SEO: Melhorar a estrutura de SEO do site para facilitar o ranqueamento nos motores de busca.
+ - [ ] Refinar animações de transição: Aperfeiçoar o tempo e os efeitos de transições para um visual mais fluido.
+ - [ ] Testar compatibilidade entre navegadores: Garantir que o site funcione bem em diferentes navegadores e dispositivos.
+ - [ ] Implementação de funcionalidades de backend: Se necessário, adicionar funcionalidades de backend para gerenciar os dados do sistema.
