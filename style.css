@@ -30,22 +30,26 @@
 }
  
 /* TEXTO ANIMADO */
-.texto-animado {
-    font-size: 3.5rem;
-    text-align: center;
-    color: #ee5752;
-    animation: pulsar 2s ease-in-out infinite; /* Animação de pulsar */
-}
+ .texto-animado {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 0.9em;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 20px;
+        }
 
-/* Animação de pulsar */
-@keyframes pulsar {
-    0%, 100% {
-        opacity: 1; /* Totalmente visível */
-    }
-    50% {
-        opacity: 0.5; /* Meio transparente */
-    }
-}
+        .texto-animado strong {
+            display: inline-block;
+            animation: marquee 15s linear infinite;
+        }
+         @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
 
 /*BODY*/
 body {
